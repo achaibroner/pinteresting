@@ -1,4 +1,5 @@
 Pinteresting::Application.routes.draw do
+  devise_for :users
   get "share" =>"page#share"
   root 'pages#home'
   get "about" => "pages#about"
